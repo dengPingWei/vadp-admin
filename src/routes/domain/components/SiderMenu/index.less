@@ -1,0 +1,130 @@
+.adminSiderMenu {
+  max-height: calc(~"100vh - 82px");
+  overflow: hidden;
+  position: fixed;
+  background-color: white;
+  border-right: 1px #e5e5e5 solid;
+  //margin-top: 40px;
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -ms-flex-direction: column;
+
+  :global {
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+      padding: 4.8px 16px;
+    }
+
+    .ant-table-tbody > tr > td {
+      padding: 0px 0px 0px 0px;
+      text-align: left;
+      height: 34px;
+    }
+
+    .ant-table-tbody > tr > td.ant-table-selection-column {
+      width: 35px;
+      min-width: 35px;
+      text-align: center;
+      padding: 0px;
+    }
+
+  }
+
+  .header {
+    background-color: white;
+    width: 280px;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    height: 46px;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    padding-left: 16px;
+    padding-right: 16px;
+    //position: fixed;
+    top: 50px;
+    z-index: 2;
+    border-right: 1px #e5e5e5 solid;
+    border-bottom: #e5e5e5 1px solid;
+
+    .buttonContainer {
+      display: flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      -ms-flex-direction: row;
+      align-items: center;
+      -ms-flex-align: center;
+
+      .button {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+      }
+    }
+
+    :global {
+      a {
+        color: #666;
+      }
+
+      a:hover {
+        color: #1890ff;
+      }
+
+      a:active {
+        color: #1890ff;
+      }
+    }
+  }
+
+  .columnIdTextLayout {
+    //border-top: #e5e5e5 1px solid;
+    border-right: #e5e5e5 1px solid;
+    height: 100%;
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-flex-align: center;
+    padding-left: 16px;
+  }
+
+  .columnIdText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    width: 90px; //这里width需要定值
+  }
+
+  .columnNameTextLayout {
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-flex-align: center;
+    height: 100%;
+    //border-top: #e5e5e5 1px solid;
+    padding-left: 16px;
+  }
+
+  .columnNameText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    width: 130px; //这里width需要定值
+  }
+
+  .tableBorder {
+    height: ~"calc(100vh - 160px)";
+    z-index: 1;
+    //overflow: hidden;
+  }
+}
+
+@import "./dark.less";
+
+
+
+
+

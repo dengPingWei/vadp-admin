@@ -1,0 +1,88 @@
+.domainContent {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: flex-end;
+  -ms-flex-align: end;
+
+  .formContainer {
+    width: inherit;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+  }
+
+}
+
+.domainContentContainer {
+  background-color: white;
+
+  .div {
+    padding-left: 300px;
+    padding-right: 20px;
+    height: calc(~"100vh - 50px - 24px");
+  }
+
+  .rule {
+    width: inherit;
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: flex-end;
+    -ms-flex-pack: end;
+    align-items: center;
+    -ms-flex-align: center;
+    height: 40px;
+  }
+
+  .submitButton {
+    display: flex;
+    display: -ms-flexbox;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -ms-flex-align: center;
+  }
+
+  .checkboxGroup {
+    height: 32px;
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-flex-align: center;
+  }
+
+  .inputNumber {
+    width: 100%;
+  }
+
+  :global {
+    .ant-col-sm-1 {
+      width: 70px;
+    }
+
+    .ant-col-sm-24 {
+      width: calc(~"100% - 70px")
+    }
+
+    .ant-col-sm-4 {
+      width: 70px;
+    }
+
+    .ant-col-sm-20 {
+      width: calc(~"100% - 70px");
+    }
+
+    .ant-form-item {
+      margin-left: 24px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@import "./dark.less";

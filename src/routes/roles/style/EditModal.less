@@ -1,0 +1,214 @@
+@import "../../../assets/default.less";
+
+.roleEditModal {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  overflow-y: auto;
+  max-height: calc(~ "(100vh - 140px) * 0.8");
+
+  :global {
+    .ant-col-sm-1 {
+      width: 70px;
+    }
+    .ant-col-sm-4 {
+      width: 70px;
+    }
+    .ant-col-sm-24 {
+      width: calc(~"100% - 70px")
+    }
+    .ant-col-sm-20 {
+      width: calc(~"100% - 70px");
+    }
+    .ant-form-item {
+      margin-right: 24px;
+      margin-bottom: 0px;
+    }
+
+    .rightItem {
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.roleEditModal .firstColumn {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  align-items: center;
+  -ms-flex-align: center;
+  margin-top: 8px;
+}
+
+.roleEditModal .directionRow {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  align-items: center;
+  -ms-flex-align: center;
+}
+
+.roleEditModal .label {
+  width: 60px;
+  min-width: 60px;
+  margin-right: 12px;
+  display: -moz-inline-box;
+  display: inline-block;
+  text-align: right;
+  color: #666;
+}
+
+.roleEditModal .requiredLabel {
+  width: 60px;
+  min-width: 60px;
+  margin-right: 12px;
+  display: -moz-inline-box;
+  display: inline-block;
+  text-align: right;
+  color: #666;
+}
+
+.roleEditModal .requiredLabel:before {
+  display: inline-block;
+  margin-right: 4px;
+  content: "*";
+  font-family: SimSun;
+  line-height: 1;
+  font-size: 14px;
+  color: #f5222d;
+}
+
+.roleEditModal .textarea {
+}
+
+.roleEditModal .allocation {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  margin-top: 12px;
+}
+
+.roleEditModal .avatar {
+  margin-top: 12px;
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  max-height: 280px;
+  min-height: 160px;
+  overflow: auto;
+}
+
+.roleEditModal .avatarImg {
+  width: 46px;
+  height: 46px;
+  background-size: 100%;
+  border-radius: 100px;
+  border: 1px solid #d9d9d9;
+}
+
+.roleEditModal .defaultAvatarImg {
+  width: 46px;
+  height: 46px;
+  background-size: 100%;
+  border-radius: 100px;
+  border: 1px solid #d9d9d9;
+  background-color: @primary-color;
+  opacity: 0.7;
+}
+
+.roleEditModal .avatarDiv {
+  position: relative;
+}
+
+.roleEditModal .user {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  align-items: center;
+  -ms-flex-align: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  width: 62px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  position: relative;
+  border: 1px transparent solid;
+}
+
+.roleEditModal .user:hover {
+  background-color: rgba(24, 144, 255, 0.1);
+  border: 1px @primary-color dashed;
+  .deleteIcon {
+    display: inherit;
+  }
+}
+
+.roleEditModal .borders {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  border: 1px transparent solid;
+  z-index: 101;
+}
+
+.roleEditModal .borders:hover {
+
+}
+
+.roleEditModal .userSpan {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  width: 62px; //这里width需要定值
+  text-align: center;
+}
+
+.roleEditModal .input {
+  width: 150px;
+  height: 29px;
+}
+
+.roleEditModal .deleteIcon {
+  float: right;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  color: rgba(0, 0, 0, 0.65);
+  display: none;
+  z-index: 102;
+}
+
+.roleEditModal .deleteIcon:hover {
+  color: rgba(0, 0, 0, 1.0);
+}
+
+.roleEditModal .mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  opacity: 0.7;
+}
+
+@import "EditModalDark.less";
+
+
+

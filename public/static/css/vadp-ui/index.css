@@ -1,0 +1,33 @@
+.ant-menu-item .iconfont,
+.ant-menu-submenu-title .iconfont {
+  min-width: 14px;
+  margin-right: 10px;
+  -webkit-transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.titleContainer___3tyku {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.titleContainer___3tyku .line___1OGbP {
+  width: 4px;
+  height: 18px;
+  background-color: #188FFF;
+}
+.titleContainer___3tyku .text___1fZ5L {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: PingFangSC-Regular;
+  margin-left: 8px;
+}
+
+/*# sourceMappingURL=index.css.map*/

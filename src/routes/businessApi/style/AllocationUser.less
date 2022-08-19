@@ -1,0 +1,67 @@
+
+.roleAllocationUser {
+  overflow-y: auto;
+  max-height: calc(~ "(100vh - 140px) * 0.8");
+
+  .userColumnNameText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 130px; //这里width需要定值
+  }
+
+  .columnSelect {
+    width: 100%;
+    height: 100%;
+  }
+
+  .description {
+    width: 280px;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+  }
+
+  .rangeContainer {
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    align-items: center;
+    -ms-flex-align: center;
+    margin-top: 15px;
+
+    .select {
+      margin-left: 16px;
+      width: 150px;
+    }
+  }
+
+  .table {
+    margin-top: 15px;
+  }
+}
+
+:global {
+  .vertical-center-modal {
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .vertical-center-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+  }
+
+  .vertical-center-modal .ant-modal {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+  }
+}

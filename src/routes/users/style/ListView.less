@@ -1,0 +1,78 @@
+
+.actionContainer {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: space-around;
+  -ms-flex-pack: justify;
+  align-items: center;
+  -ms-flex-align: center;
+
+  a {
+    display: inline-block;
+  }
+}
+
+.userList {
+
+  .userColumnNameText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    max-width: 130px; //这里width需要定值
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  .userColumnUnitText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    max-width: 230px; //这里width需要定值
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  .userColumnDescriptionText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    max-width: calc(~"100vw - 1150px");
+    -o-text-overflow: ellipsis;
+  }
+
+}
+
+.userOperation {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+  margin-bottom: 14px;
+  align-items: center;
+  -ms-flex-align: center;
+
+  .buttonText {
+    color: #188FFF;
+    height: 30px;
+  }
+
+  .operationContainer {
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+
+    .button {
+      height: 30px;
+    }
+  }
+}
+
+@import "ListviewDark.less";

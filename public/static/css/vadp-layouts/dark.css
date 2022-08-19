@@ -1,0 +1,389 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
+.vadp_exception {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.vadp_exception .vadp_imgBlock {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 62.5%;
+          flex: 0 0 62.5%;
+  width: 62.5%;
+  padding-right: 152px;
+  zoom: 1;
+}
+.vadp_exception .vadp_imgBlock:before,
+.vadp_exception .vadp_imgBlock:after {
+  content: " ";
+  display: table;
+}
+.vadp_exception .vadp_imgBlock:after {
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+}
+.vadp_exception .vadp_imgEle {
+  height: 360px;
+  width: 100%;
+  max-width: 430px;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.vadp_exception .vadp_content {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+.vadp_exception .vadp_content h1 {
+  color: #434e59;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 72px;
+  margin-bottom: 24px;
+}
+.vadp_exception .vadp_content .vadp_desc {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.vadp_exception .vadp_content .vadp_actions button:not(:last-child) {
+  margin-right: 8px;
+}
+@media screen and (max-width: 1200px) {
+  .vadp_exception .vadp_imgBlock {
+    padding-right: 88px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .vadp_exception {
+    display: block;
+    text-align: center;
+  }
+  .vadp_exception .vadp_imgBlock {
+    padding-right: 0;
+    margin: 0 auto 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .vadp_exception .vadp_imgBlock {
+    margin-bottom: -24px;
+    overflow: hidden;
+  }
+}
+.vadp_globalFooter {
+  padding: 0 16px;
+  margin: 48px 0 24px 0;
+  text-align: center;
+}
+.vadp_globalFooter .vadp_links {
+  margin-bottom: 8px;
+}
+.vadp_globalFooter .vadp_links a {
+  color: rgba(0, 0, 0, 0.45);
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.vadp_globalFooter .vadp_links a:not(:last-child) {
+  margin-right: 40px;
+}
+.vadp_globalFooter .vadp_links a:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+.vadp_globalFooter .vadp_copyright {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+}
+.vadp_header {
+  padding: 0 12px 0 0;
+  background: #102132;
+  color: #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+          box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  position: relative;
+}
+.ant-layout {
+  overflow-x: hidden;
+}
+.vadp_menu .anticon {
+  margin-right: 8px;
+}
+.vadp_menu .ant-dropdown-menu-item {
+  width: 160px;
+}
+i.vadp_trigger {
+  font-size: 20px;
+  line-height: 64px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  padding: 0 24px;
+}
+i.vadp_trigger:hover {
+  background: #e6f7ff;
+}
+@media screen and (max-width: 480px) {
+  .vadp_trigger {
+    display: none;
+  }
+}
+.vadp_right {
+  float: right;
+  height: 100%;
+}
+.vadp_right .vadp_action {
+  cursor: pointer;
+  padding: 0 12px;
+  display: inline-block;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  height: 100%;
+}
+.vadp_right .vadp_action > i {
+  font-size: 16px;
+  vertical-align: middle;
+}
+.vadp_right .vadp_action.ant-popover-open,
+.vadp_right .vadp_action:hover {
+  background: #e6f7ff;
+}
+.vadp_right .vadp_search {
+  padding: 0;
+  margin: 0 12px;
+}
+.vadp_right .vadp_search:hover {
+  background: transparent;
+}
+.vadp_right .vadp_account .vadp_avatar {
+  margin: 20px 8px 20px 0;
+  color: #188FFF;
+  background: rgba(255, 255, 255, 0.85);
+  vertical-align: middle;
+}
+.vadp_headerSearch .anticon-search {
+  cursor: pointer;
+  font-size: 16px;
+}
+.vadp_headerSearch .vadp_input {
+  -webkit-transition: width 0.3s, margin-left 0.3s;
+  -o-transition: width 0.3s, margin-left 0.3s;
+  transition: width 0.3s, margin-left 0.3s;
+  width: 0;
+  background: transparent;
+  border-radius: 0;
+}
+.vadp_headerSearch .vadp_input .ant-select-selection {
+  background: transparent;
+}
+.vadp_headerSearch .vadp_input input {
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+.vadp_headerSearch .vadp_input,
+.vadp_headerSearch .vadp_input:hover,
+.vadp_headerSearch .vadp_input:focus {
+  border-bottom: 1px solid #d9d9d9;
+}
+.vadp_headerSearch .vadp_input.vadp_show {
+  width: 210px;
+  margin-left: 8px;
+}
+.vadp_popover {
+  width: 336px;
+}
+.vadp_popover .ant-popover-inner-content {
+  padding: 0;
+}
+.vadp_noticeButton {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.vadp_icon {
+  font-size: 16px;
+  padding: 4px;
+  color: #fff;
+}
+.vadp_tabs .ant-tabs-nav-scroll {
+  text-align: center;
+}
+.vadp_tabs .ant-tabs-bar {
+  margin-bottom: 4px;
+}
+.vadp_logo {
+  height: 64px;
+  position: relative;
+  line-height: 64px;
+  padding-left: 12px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  background: #102132;
+  overflow: hidden;
+}
+.vadp_logo img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+}
+.vadp_logo h1 {
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  margin: 0 0 0 12px;
+  font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.vadp_sider {
+  min-height: 100vh;
+  -webkit-box-shadow: 2px 0 6px rgba(16, 33, 50, 0.35);
+          box-shadow: 2px 0 6px rgba(16, 33, 50, 0.35);
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+}
+.vadp_siderMenu {
+  padding: 16px 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow: auto;
+}
+.vadp_container {
+  width: 100%;
+  min-height: 100%;
+  background: #f0f2f5 url(/static/images/user-layout-bg.jpg) no-repeat center;
+  background-size: 100%;
+  padding: 110px 0 144px 0;
+  position: relative;
+  overflow: hidden;
+}
+.vadp_container .vadp_top {
+  padding-left: 340px;
+}
+.vadp_container .vadp_header {
+  height: 44px;
+  line-height: 44px;
+  background: transparent;
+}
+.vadp_container .vadp_header a {
+  text-decoration: none;
+}
+.vadp_container .vadp_logo {
+  height: 44px;
+  vertical-align: top;
+  margin-right: 16px;
+  background: transparent;
+}
+.vadp_container .vadp_title {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+  top: 2px;
+}
+.vadp_container .vadp_desc {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+.vadp_container .vadp_footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.vadp_main {
+  width: 100%;
+  height: 100%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.vadp_main .vadp_form {
+  position: relative;
+  float: right;
+  top: 100px;
+  right: 300px;
+}
+.vadp_main .vadp_tabs {
+  width: 380px;
+  padding: 0 2px;
+  margin: 0 -2px;
+}
+.vadp_main .vadp_tabs .ant-tabs-tab {
+  font-size: 16px;
+  line-height: 24px;
+}
+.vadp_main .vadp_tabs .ant-tabs-tab-active {
+  color: #FFBA1F ;
+}
+.vadp_main .vadp_tabs .ant-input-affix-wrapper .ant-input:not(:first-child) {
+  padding-left: 34px;
+}
+.vadp_main .ant-tabs .ant-tabs-bar {
+  border-bottom: 0;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.vadp_main .ant-form-item {
+  margin-bottom: 24px;
+}
+.vadp_main .vadp_prefixIcon {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.25);
+}
+.vadp_main .vadp_getCaptcha {
+  display: block;
+  width: 100%;
+}
+.vadp_main .vadp_additional {
+  width: 380px;
+  text-align: left;
+}
+.vadp_main .vadp_additional .vadp_forgot {
+  float: right;
+  color: #FFBA1F ;
+}
+.vadp_main .vadp_additional .vadp_submit {
+  background-color: #FFBA1F;
+  color: #102132;
+  width: 100%;
+  margin-top: 24px;
+}
+.vadp_main .vadp_additional .ant-form-item-control {
+  line-height: 22px;
+}
+.vadp_main .vadp_additional .ant-form-item-control .ant-checkbox-wrapper {
+  color: #FFBA1F ;
+}
+.vadp_main .vadp_other {
+  width: 380px;
+  text-align: left;
+  margin-top: 24px;
+  line-height: 22px;
+}
+.vadp_main .vadp_other .vadp_register {
+  float: right;
+  color: #FFBA1F ;
+}
+
+/*# sourceMappingURL=dark.style.map*/

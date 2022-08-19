@@ -1,0 +1,129 @@
+/**
+ * Created by huangzhangshu on 2019/12/4
+ */
+.adminEntrust {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  width: 100%;
+  height: calc(~"100vh - 82px");
+  overflow: hidden;
+
+  .select {
+
+  }
+
+  .listContainer {
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    //width: 220px;
+    height: 100%;
+
+
+    .menuItem {
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: block;
+      max-width: 220px;
+    }
+
+    .list {
+      height: 100%;
+      margin-top: 26px;
+    }
+  }
+
+  .tableContainer {
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: 32px;
+    margin-right: 8px;
+    overflow: hidden;
+
+    .titleContainer {
+      display: flex;
+      display: -ms-flexbox;
+      justify-content: space-between;
+      flex-direction: row;
+      -ms-flex-direction: row;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    .buttonContainer {
+      display: flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      -ms-flex-direction: row;
+      justify-content: flex-end;
+      -ms-flex-pack: end;
+
+      .button {
+        height: 32px;
+        margin-left: 8px;
+      }
+
+      .table {
+
+      }
+    }
+  }
+
+  :global .ant-table-placeholder {
+    border: 1px solid #d9d9d9;
+    //border-bottom: none;
+  }
+
+  :global .ant-select {
+    width: 100%;
+  }
+
+  :global .ant-pagination-options-size-changer.ant-select {
+    width: auto !important;
+  }
+
+  :global .ant-menu-vertical .ant-menu-item {
+    padding: 0 12px !important;
+  }
+
+  .tableSpan {
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+  }
+
+}
+
+.columnEllipsis{
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+.actionContainer {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: space-around;
+  -ms-flex-pack: justify;
+  align-items: center;
+  -ms-flex-align: center;
+
+  a {
+    display: inline-block;
+  }
+}

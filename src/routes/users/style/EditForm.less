@@ -1,0 +1,45 @@
+@import "../../../assets/default.less";
+
+.userEditForm {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  margin-top: 16px;
+  overflow-y: auto;
+  max-height: calc(~ "(100vh - 140px) * 0.8");
+
+  :global .ant-col-14 {
+    width: 60% !important;
+  }
+
+  .avatarImage {
+    width: 86px;
+    height: 86px;
+    background-size: 100%;
+  }
+
+  .defaultAvatarImage {
+    width: 86px;
+    height: 86px;
+    background-size: 100%;
+  }
+
+}
+
+.selectEllipsis {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  max-width: 200px;
+}
+
+:global .dark {
+  :local .defaultAvatarImage {
+    background-color: transparent;
+  }
+}

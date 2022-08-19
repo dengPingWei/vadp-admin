@@ -1,0 +1,9 @@
+{
+    "proxy": {
+        "/api": {
+            "target": "http://10.0.62.81:8080/OES/",
+            "changeOrigin": true,
+            " pathRewrite": { "^/api" : "" }
+        }
+    }
+}

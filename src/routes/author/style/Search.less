@@ -1,0 +1,127 @@
+.roleSearch {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  -ms-flex-direction: column;
+
+  .container {
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+
+    .inputContainer {
+      display: flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      -ms-flex-direction: row;
+    }
+
+    .inputContainerColumn {
+      display: flex;
+      display: -ms-flexbox;
+      flex-direction: column;
+      -ms-flex-direction: column;
+    }
+
+    .searchLabel2 {
+      opacity: 0.65;
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #000000;
+      line-height: 14px;
+    }
+
+    .searchLabel {
+      opacity: 0.65;
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #000000;
+      line-height: 14px;
+    }
+
+    .searchLabel:before {
+      display: inline-block;
+      margin-right: 4px;
+      content: "*";
+      font-family: SimSun;
+      line-height: 1;
+      font-size: 14px;
+      color: #f5222d;
+    }
+
+    .searchMargin {
+      margin-left: 15px;
+    }
+
+    .autoComplete {
+      width: 180px;
+    }
+
+    .searchButton {
+      height: 30px;
+    }
+  }
+
+  .header {
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    align-items: center;
+    -ms-flex-align: center;
+    //border-bottom: 1px #d9d9d9 solid;
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+    .first {
+      display: flex;
+      display: -ms-flexbox;
+      flex-direction: row;
+      -ms-flex-direction: row;
+    }
+  }
+
+  :global {
+    .ant-col-7 {
+      width: 250px;
+      margin-right: 24px;
+    }
+    .ant-col-3 {
+      position: absolute;
+      right: 0;
+    }
+    .ant-form-item{
+      margin-bottom: 0px;
+    }
+
+    .ant-btn-primary {
+      color: #fff;
+      background-color: #1890ff !important;
+      border-color: #1890ff !important;
+    }
+
+    .anticon-search  {
+      color: #fff !important;
+    }
+  }
+
+  :global .ant-row {
+    display: flex;
+    display: -ms-flexbox;
+    //align-items: center;
+  }
+
+}
+
+.searchHeader {
+  //width: calc(~"100vw - 260px");
+  position: fixed;
+}
+
+@import "SearchDark.less";
+
+

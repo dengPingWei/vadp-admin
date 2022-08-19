@@ -1,0 +1,28 @@
+.adminDomain {
+
+  .columnName {
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+  }
+
+  .columnUnit {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+  }
+
+}
+.tableBody {
+  :global .isEnableCellName {
+    background-color: lightgray;
+  }
+}
+@import "./dark.less";
